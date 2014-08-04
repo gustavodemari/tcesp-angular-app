@@ -1,0 +1,5 @@
+<h1>Despesas Orgaos</h1>
+<select ng-model="ano" ng-options="ano for ano in anos"></select>
+<ul>
+  <li ng-repeat="despesa in despesas">{{despesa.vl_empenhado}}</li>
+</ul>
