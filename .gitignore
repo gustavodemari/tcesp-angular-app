@@ -1,0 +1,4 @@
+node_modules/
+app/bower_components/
+app/views/min/
+app/index.html
