@@ -3,7 +3,6 @@ var concat = require('gulp-concat');
 var minifyJS = require('gulp-uglify');
 var minifyHTML = require('gulp-htmlmin');
 
-
 gulp.task('js', function(){
   //Gerar javascript das libs (angular, bootstrap e etc)
   gulp.src([
@@ -70,3 +69,7 @@ gulp.task('html', function(){
 })
 
 gulp.task('build', ['js', 'css', 'fonts', 'html', 'app']);
+
+gulp.task('watch', function(){
+  gulp.watch('app/modules/**', ['build']);
+})
