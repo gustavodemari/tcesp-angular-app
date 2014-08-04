@@ -1,3 +1,4 @@
-var services = angular.module('angular-rest-api.services', [
-  'angular-rest-api.services.users'
+var services = angular.module('tcesp-angular-app.services', [
+  'tcesp-angular-app.services.users',
+  'tcesp-angular-app.services.despesas',
   ]);

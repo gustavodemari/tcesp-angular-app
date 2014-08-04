@@ -1,11 +1,12 @@
 /* Main App Angular*/
-var app = angular.module('angular-rest-api.core',[
+var app = angular.module('tcesp-angular-app.core',[
   'ngRoute',
-  'angular-rest-api.services',
-  'angular-rest-api.controllers'
+  'tcesp-angular-app.services',
+  'tcesp-angular-app.controllers'
   ]);
 
 app.config(['$routeProvider', function($routeProvider){
   $routeProvider.when('/users', {templateUrl:'views/users.html', controller: 'UsersListCtrl'});
   $routeProvider.when('/users/:userId', {templateUrl:'views/users_detail.html', controller: 'UsersDetailCtrl'});
+  $routeProvider.when('/despesas', {templateUrl:'views/despesas.html', controller: 'DespesasCtrl'});
 }])

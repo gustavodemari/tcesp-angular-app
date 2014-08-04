@@ -1,7 +1,7 @@
 /* Users Services */
 var API_URL = 'http://localhost:5000/api';
 
-var UsersSvc = angular.module('angular-rest-api.services.users', ['ngResource']);
+var UsersSvc = angular.module('tcesp-angular-app.services.users', ['ngResource']);
 
 UsersSvc.factory('Users', ['$resource', function($resource){
   return $resource(API_URL + '/users/:userId', {}, {
@@ -10,7 +10,7 @@ UsersSvc.factory('Users', ['$resource', function($resource){
 }]);
 
 /* Users Controller */
-var UsersCtrl = angular.module('angular-rest-api.controllers.users', []);
+var UsersCtrl = angular.module('tcesp-angular-app.controllers.users', []);
 
 UsersCtrl.controller('UsersListCtrl', ['$scope', 'Users', function($scope, Users){
   $scope.users = Users.list();

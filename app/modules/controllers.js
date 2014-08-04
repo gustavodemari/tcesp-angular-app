@@ -1,3 +1,4 @@
-var controllers = angular.module('angular-rest-api.controllers', [
-  'angular-rest-api.controllers.users'
+var controllers = angular.module('tcesp-angular-app.controllers', [
+  'tcesp-angular-app.controllers.users',
+  'tcesp-angular-app.controllers.despesas'
   ]);
