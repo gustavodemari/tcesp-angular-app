@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="tcesp-angular-app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="tcesp-angular-app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="tcesp-angular-app" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="tcesp-angular-app" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="tcesp-angular-app.core" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="tcesp-angular-app.core" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="tcesp-angular-app.core" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="tcesp-angular-app.core" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +16,18 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-  <div ng-view></div>
-
-  <noscript>
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3 class="text-center">This site needs Javascript enabled. Please, enable Javascript and refresh.</h3>
+        <div ng-view></div>
+        <noscript>
+          <h3 class="text-center">This site needs Javascript enabled. Please, enable Javascript and refresh.</h3>
+        </noscript>
+        <p class="text-center">Desenvolvido por <a href="http://gustavodemari.com.br">Gustavo De Mari Pereira</a></p></div>
       </div>
     </div>
-  </noscript>
+  </div>
 
-  <div class="container"><p class="text-center">Desenvolvido por <a href="http://gustavodemari.com.br">Gustavo De Mari Pereira</a></p></div>
   <script src="js/libs.min.js"></script>
   <script src="js/app.min.js"></script>
   <script>

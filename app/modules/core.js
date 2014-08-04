@@ -8,5 +8,5 @@ var app = angular.module('tcesp-angular-app.core',[
 app.config(['$routeProvider', function($routeProvider){
   $routeProvider.when('/users', {templateUrl:'views/users.html', controller: 'UsersListCtrl'});
   $routeProvider.when('/users/:userId', {templateUrl:'views/users_detail.html', controller: 'UsersDetailCtrl'});
-  $routeProvider.when('/despesas', {templateUrl:'views/despesas.html', controller: 'DespesasCtrl'});
+  $routeProvider.when('/despesas', {templateUrl:'views/despesas.html', controller: 'DespesasMunicipiosCtrl'});
 }])
