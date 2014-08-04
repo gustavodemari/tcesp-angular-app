@@ -1,6 +1,6 @@
 {
-  "name": "angular-express-api",
-  "description": "Angular.JS REST API",
+  "name": "tcesp-angular-app",
+  "description": "TCESP Angular App",
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
