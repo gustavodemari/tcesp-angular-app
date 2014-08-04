@@ -22,6 +22,7 @@ DespesasCtrl.controller('DespesasMunicipiosDetailCtrl', ['$scope', '$routeParams
 
 DespesasCtrl.controller('DespesasOrgaosCtrl', ['$scope', '$routeParams', 'Despesas', function($scope, $routeParams, Despesas){
   $scope.anos = [2014, 2013, 2012, 2011, 2010, 2009, 2008];
+  $scope.ano = $routeParams.ano;
 
   $scope.despesas = Despesas.list({
       municipioId: $routeParams.municipioId, 
