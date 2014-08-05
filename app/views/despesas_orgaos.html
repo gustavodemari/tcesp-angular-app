@@ -1,5 +1,9 @@
-<h1>Despesas Orgaos</h1>
+<h3>{{despesas[0].ds_orgao}}</h3>
 <select ng-model="ano" ng-options="ano for ano in anos"></select>
 <ul>
   <li ng-repeat="despesa in despesas">{{despesa.vl_empenhado}}</li>
 </ul>
+
+<div class="hc-stacked" items="chartSeries" title="title"></div>
+<button id="addPoint">ADD POINT</button>
+
