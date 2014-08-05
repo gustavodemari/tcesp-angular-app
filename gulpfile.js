@@ -44,6 +44,7 @@ gulp.task('app', function(){
     'app/modules/core.js',
     'app/modules/services.js',
     'app/modules/controllers.js',
+    'app/modules/directives.js',
     'app/modules/custom/**'
     ])
   .pipe(concat('app.min.js'))
